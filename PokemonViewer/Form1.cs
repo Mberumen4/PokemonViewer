@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace PokemonViewer
 {
-    public partial class Form1 : Form
+    public partial class Name : Form
     {
-        public Form1()
+        public Name()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
