@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net45;netstandard2.0</TargetFrameworks>
+    <Description>A .NET Wrapper for http://www.pokeapi.co/, a REST API for accessing Pokémon information.</Description>
+    <Company>PoroCYon</Company>
+    <Authors>PoroCYon</Authors>
+    <Copyright>Copyright © PoroCYon 2013-2015 Licensed under the WTFPL.</Copyright>
+    <Version>1.1.2</Version>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>pokemon, pokeapi</PackageTags>
+    <SignAssembly>False</SignAssembly>
+    <PackageLicenseUrl>http://wtfpl2.com/</PackageLicenseUrl>
+    <PackageIconUrl>https://vignette3.wikia.nocookie.net/youtubepoop/images/4/4c/Pokeball.png</PackageIconUrl>
+    <PackageProjectUrl>https://gitlab.com/PoroCYon/PokeApi.NET</PackageProjectUrl>
+    <RepositoryUrl>https://gitlab.com/PoroCYon/PokeApi.NET</RepositoryUrl>
+    <DebugType>portable</DebugType>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile> 
+    <NoWarn>1591</NoWarn>
+    <RootNamespace>PokeAPI</RootNamespace>
+    <PackageReleaseNotes>Fix #24 - ResourceList enumerator now includes all resources correctly.</PackageReleaseNotes>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
+    <PackageReference Include="System.Net.Http" Version="4.3.*" />
+    <PackageReference Include="System.ValueTuple" Version="4.3.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+</Project>
