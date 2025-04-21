@@ -1,22 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PokemonViewer
 {
-    internal static class Program
+    static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
+        [STAThread] // This attribute ensures the application runs on a single thread, necessary for Windows Forms.
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Name());
+            // Start the application and show the main form
+            Application.EnableVisualStyles(); // This applies the visual styles for modern UI elements.
+            Application.SetCompatibleTextRenderingDefault(false); // This ensures compatibility for text rendering.
+            Application.Run(new Form1()); // This launches your Form1, which is your main form.
         }
     }
 }

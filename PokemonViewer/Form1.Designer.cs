@@ -1,6 +1,6 @@
 ﻿namespace PokemonViewer
 {
-    partial class Name
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -70,7 +70,6 @@
             this.lblName.Size = new System.Drawing.Size(35, 13);
             this.lblName.TabIndex = 2;
             this.lblName.Text = "label1";
-            this.lblName.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblHappiness
             // 
@@ -189,7 +188,7 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "Egg Group";
             // 
-            // Name
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -210,7 +209,7 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.btnGetPokemon);
             this.Controls.Add(this.txtPokemonName);
-            this.Name = "Name";
+            this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
